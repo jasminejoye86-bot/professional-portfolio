@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Boldonse&family=Bowlby+One&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Playwrite+CU+Guides&family=Playwrite+IN+Guides&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Special+Gothic+Condensed+One&family=Staatliches&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: rgb(4, 4, 50);
+        color: white;
+        font-family: "Rubik", sans-serif;
+
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        height: 10vmin;
+        background-color: rgb(27, 27, 94);
+    }
+
+    nav .left {
+        font-size: 25px;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        list-style-type: none;
+        margin: 0px 40px;
+        font-size: 18px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    nav ul li a:hover {
+        color: rgb(155, 12, 155);
+        font-size: 1.2rem;
+    }
+
+    .firstSection {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    /* .firstSection div{
+        font-size: 2rem;
+    } */
+    .purple {
+        color: rgb(155, 12, 155);
+    }
+
+
+    .leftSection {
+        font-size: 2.4rem;
+        width: 30%;
+        margin: 140px 0px;
+
+    }
+
+    .rightSection {
+        width: 30%;
+
+    }
+
+    .rightSection img {
+        height: 100%;
+    }
+
+    #element {
+        color: rgb(155, 12, 155);
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Jasmine's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, my name is <span class="purple">Jasmine</span>
+                <div>and I am a passionate</div>
+                <span id="element">Web Developer</span>
+            </div>
+            <div class="rightSection">
+                <img src="developerGirl" alt="">
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer.', 'Web Designer.', 'Problem Solver.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
